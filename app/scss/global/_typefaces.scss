@@ -1,0 +1,27 @@
+// @font-face {
+// 	font-family: "DIN";
+// 	src: url("../fonts/DIN.woff2") format("woff2"), /* chrome、firefox */
+// 		url("../fonts/DIN.woff") format("woff"), /* chrome、firefox */
+// 		url("../fonts/DIN.ttf") format("truetype");
+// 	font-display: swap;
+// }
+
+// @font-face {
+// 	font-family: "Avenir-B";
+// 	src: url("../fonts/Avenir-Book.woff2") format("woff2"), /* chrome、firefox */
+// 		url("../fonts/Avenir-Book.woff") format("woff"), /* chrome、firefox */
+// 		url("../fonts/Avenir-Book.ttf") format("truetype");
+// 	font-display: swap;
+// }
+
+
+$main-font: Geneva, Calibri, Helvetica, sans-serif;
+$secondary-font: Segoe UI, Century Gothic, CenturyGothic, AppleGothic, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+h1{
+	font-family: $main-font;
+}
+
+h2{
+	font-family: $secondary-font;
+}

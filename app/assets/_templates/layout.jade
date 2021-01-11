@@ -1,0 +1,54 @@
+doctype html
+html(class='no-js')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1')
+		meta(name='viewport', content='shrink-to-fit=no, initial-scale=1.0, minimum-scale=1, width=device-width, height=device-height')
+
+		block title
+			title Static_Engine
+
+		//- metatags
+		block google_metatags
+			meta(name='description', content='Page_description')
+			meta(name='subject', content='Page_subject')
+
+		//- Share graphs for social media
+		block og_metatags
+			meta(property="og:url" 			content="PLACE_YOUR_URL")
+			meta(property="og:title" 		content="PLACE_YOUR_TITLE")
+			meta(property="og:description" 	content="PLACE_YOUR_DESCRIPTION")
+			meta(property="og:image" 		content="PLACE_YOUR_IMAGE_URL")
+
+		//- Share graphs that doesn't change
+		meta(property="og:type" 		content="website")
+		meta(name="twitter:card", content="summary")
+
+		//- stylesheets
+		link(rel='stylesheet', href='css/app.css')
+
+	body
+		//- testing grid
+		//- .btl-grid.testing
+		.btl-grid.testing.view-padding
+			.btl-row
+				- var c = 0
+				while c < 24
+					.btl-col-1
+						.inner
+						- c++
+
+
+
+
+		//- header
+		h1 Static Engine
+		h2 Built on top of brunch, no libraries yet.
+		h4 by Andrew Alva
+
+		//- content
+		#main-wrapper
+			block content
+
+		//- scripts
+		script(src='js/app.js')
